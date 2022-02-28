@@ -1,0 +1,7 @@
+; https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-l2tp-ipsec-server-behind-nat-t-device
+; Personally required to get VPN connections working
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent]
+"AssumeUDPEncapsulationContextOnSendRule"=dword:00000002
